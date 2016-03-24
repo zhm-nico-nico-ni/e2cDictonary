@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8.0dip"
+    >
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        style="@style/MMFontTitleInList"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/text_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_table_name"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/tv_addtime"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/text_title"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_addtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_table_name"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:paddingRight="8.0dip"
+        android:text="2016-3-15"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/text_hint"
+        style="@style/Caption"
+        />
+
+
+</RelativeLayout>

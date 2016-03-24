@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="tabname_dictionary">Word query</string>
+    <string name="ok">OK</string>
+    <string name="cancel">cancel</string>
+    <string name="history">History</string>
+    <string name="new_word">New Word</string>
+    <string name="default_new_word">Default New Word Table</string>
+
+    <string name="rename">Rename</string>
+    <string name="set_description">Set description</string>
+    <!--<string name=""></string>-->
+
+    <string name="tips">Tips</string>
+    <string name="delete">Del</string>
+    <string name="delete_table_tips">delete %1$s ?</string>
+    <string name="remove_starred">Remove starred?</string>
+
+    <string name="create_new_table">New Table Name</string>
+    <string name="not_empty">Can not empty</string>
+    <string name="word_added">Word added</string>
+    <string name="set_default_new_word_table">Set default table</string>
+    <string name="set_default_new_word_table_tips">Also set as default table</string>
+    <string name="record">Record</string>
+    <string name="clear">clear</string>
+    <string name="clear_success">Clear complete!</string>
+
+</resources>

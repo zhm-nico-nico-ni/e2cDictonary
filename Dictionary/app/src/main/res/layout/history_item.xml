@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.zhm.dictionary.friendly.widget.MyTv
+        android:id="@+id/contactitem_catalog"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content"
+        android:paddingRight="4.0dip"
+        android:textSize="20.0dip"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/contactitem_layout"
+        style="@style/MMListItem"
+        android:layout_height="56.0dip"
+        android:background="@drawable/selector_item_bg"
+        android:paddingLeft="8.0dip">
+
+        <ImageView
+            android:id="@+id/contactitem_avatar_iv"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="15.0dip">
+
+            <com.zhm.dictionary.friendly.widget.MyTv
+                android:id="@+id/numbers"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ssssss"
+                android:textColor="@color/text_title"
+                android:textSize="18.0dip"/>
+
+            <com.zhm.dictionary.friendly.widget.MyTv
+                android:id="@+id/contactitem_nick"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ssssss"
+                android:textColor="@color/text_hint"
+                android:textSize="16.0dip"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/contactitem_select_cb_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="21.0dip">
+
+            <CheckBox
+                android:id="@+id/contactitem_select_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="visible"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

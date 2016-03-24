@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <com.zhm.dictionary.friendly.widget.AbsTopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"/>
+    <!--<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:background="#ff54acea"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/transparent"
+            android:paddingRight="16.0dip"
+            android:text="return"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tabname_dictionary"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:id="@+id/sv_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhm.dictionary.friendly.widget.WebContainerDic
+                    android:id="@+id/wv_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_cutline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_margin="6.0dip"
+                        android:layout_weight="1.0"
+                        android:background="#ff92bfeb"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="more"
+                        android:textColor="#ff92bfeb"
+                        android:textSize="8.0sp"
+                        android:textStyle="italic"/>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_margin="6.0dip"
+                        android:layout_weight="1.0"
+                        android:background="#ff92bfeb"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- <Button
+             android:id="@+id/btn_more"
+             android:layout_width="120.0dip"
+             android:layout_height="32.0dip"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center"
+             android:background="#22333333"
+             android:drawableRight="@drawable/moredown"
+             android:paddingRight="20.0dip"
+             android:text="@string/more"
+             android:textColor="#ff000000"
+             android:textSize="14.0sp"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

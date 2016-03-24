@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:paddingRight="8.0dip"
+    >
+
+    <TextView
+        android:id="@+id/tv_word"
+        style="@style/MMFontTitleInList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:paddingLeft="8.0dip"
+        android:text="aaa"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/text_title"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_addtime"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:text="1"
+            android:textColor="@color/text_title"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_addtime"
+            style="@style/Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:text="2016-3-15"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/text_hint"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

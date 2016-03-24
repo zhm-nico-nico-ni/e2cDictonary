@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar_abs_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height">
+
+        <LinearLayout
+            android:id="@+id/layout_child"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height"
+            android:layout_alignParentTop="true"
+            android:background="#f6f6f7"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

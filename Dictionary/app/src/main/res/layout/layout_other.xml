@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zhm.dictionary.friendly.widget.AbsTopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"/>
+    <!--<RelativeLayout
+        android:id="@+id/rl_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:background="#ff54acea"
+        android:gravity="center_vertical">
+        &lt;!&ndash;<ImageView android:background="@drawable/chat_title_bg_tile_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chat_title_bg_tile_repeat" />&ndash;&gt;
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:shadowColor="#4c000000"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="some"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:textStyle="bold"/>
+        &lt;!&ndash;<ImageButton android:id="@id/ibtn_history" android:background="@drawable/top_button_right_selector" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/icon_history" android:layout_alignParentRight="true" android:layout_centerVertical="true" />&ndash;&gt;
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="#ff555555"/>
+    </RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/tv_history"
+        style="@style/NoMarginSettingStyleTextView"
+        android:text="@string/history"/>
+
+    <View style="@style/item_divider"/>
+
+    <TextView
+        android:id="@+id/tv_new_word"
+        style="@style/NoMarginSettingStyleTextView"
+        android:text="@string/new_word"/>
+
+    <View style="@style/item_divider"/>
+
+    <View
+        style="@style/item_divider"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_new_word_default"
+        style="@style/NoMarginSettingStyleTextView"
+        android:text="@string/default_new_word"/>
+
+    <View style="@style/item_divider"/>
+</LinearLayout>
